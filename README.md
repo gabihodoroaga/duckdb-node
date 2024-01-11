@@ -122,4 +122,3 @@ To run a single test, you can use `npm test -- --grep "name of test as given in 
 To build the NodeJS package from source, when on Windows, requires the following extra steps:
 - Set `OPENSSL_ROOT_DIR` to the root directory of an OpenSSL installation
 - Supply the `STATIC_OPENSSL=1` option when executing `make`, or set `-DOPENSSL_USE_STATIC_LIBS=1` manually when calling `cmake`
-
