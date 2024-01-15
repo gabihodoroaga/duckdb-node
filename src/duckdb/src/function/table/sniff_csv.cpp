@@ -113,9 +113,9 @@ static void CSVSniffFunction(ClientContext &context, TableFunctionInput &data_p,
 	const CSVSniffFunctionData &data = data_p.bind_data->Cast<CSVSniffFunctionData>();
 	auto &fs = duckdb::FileSystem::GetFileSystem(context);
 
-	if (fs.HasGlob(data.path)) {
-		throw NotImplementedException("sniff_csv does not operate on globs yet");
-	}
+	// if (fs.HasGlob(data.path)) {
+	// 	throw NotImplementedException("sniff_csv does not operate on globs yet");
+	// }
 
 	// We must run the sniffer.
 	auto sniffer_options = data.options;
